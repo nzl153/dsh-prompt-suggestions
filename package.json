@@ -1,0 +1,58 @@
+{
+  "name": "dsh-prompt-suggestions",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 输入框的下一句建议：助手回复完，空输入框里出现一句灰色建议，按 Tab 填入。Prompt suggestions for the DSH composer.",
+  "homepage": "https://github.com/nzl153/dsh-prompt-suggestions#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nzl153/dsh-prompt-suggestions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nzl153/dsh-prompt-suggestions/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "prompt-suggestions",
+    "next-prompt",
+    "autocomplete",
+    "tab-completion",
+    "suggestion"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": {
+      "default": "./lib/index.mjs"
+    },
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    },
+    "compatibility": {
+      "dsh": ">=0.1.7-rc.2 <0.2.0",
+      "dshReleases": {
+        "0.1.7-rc.2": "compatible"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Node 端：RPC 通道 + 调模型；不配 provider/model 时自动找 flash 模型
+- insert:
+    - id: dsh-prompt-suggestions
+      name: dsh-prompt-suggestions
