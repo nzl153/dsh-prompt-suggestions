@@ -1,6 +1,6 @@
 {
   "name": "dsh-prompt-suggestions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek Harness 输入框的下一句建议：助手回复完，空输入框里出现一句灰色建议，按 Tab 填入。Prompt suggestions for the DSH composer.",
   "homepage": "https://github.com/nzl153/dsh-prompt-suggestions#readme",
   "repository": {
@@ -50,9 +50,10 @@
       ]
     },
     "compatibility": {
-      "dsh": ">=0.1.7-rc.2 <0.2.0",
+      "dsh": ">=0.1.7-rc.2 <0.3.0",
       "dshReleases": {
-        "0.1.7-rc.2": "compatible"
+        "0.1.7-rc.2": "compatible",
+        "0.2.0-rc.1": "compatible"
       }
     }
   }

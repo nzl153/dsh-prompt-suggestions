@@ -10,7 +10,7 @@ Add the dependency and bundle to your profile's `package.json` (e.g. `~/.dsh/pro
 
 ```json
 {
-  "dependencies": { "dsh-prompt-suggestions": "^0.1.0" },
+  "dependencies": { "dsh-prompt-suggestions": "^0.1.1" },
   "dsh": { "profile": { "bundles": ["...existing...", "dsh-prompt-suggestions"] } }
 }
 ```

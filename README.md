@@ -10,7 +10,7 @@ DeepSeek Harness 输入框的「下一句建议」：助手回复完后，空着
 
 ```json
 {
-  "dependencies": { "dsh-prompt-suggestions": "^0.1.0" },
+  "dependencies": { "dsh-prompt-suggestions": "^0.1.1" },
   "dsh": { "profile": { "bundles": ["...原有的...", "dsh-prompt-suggestions"] } }
 }
 ```
