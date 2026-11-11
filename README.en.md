@@ -2,6 +2,8 @@
 
 Next-message suggestions for the DeepSeek Harness composer. Once the assistant finishes replying, the empty input box shows a gray suggestion of what you are most likely to send next, based on the current conversation. Press **Tab** to accept it or **Esc** to dismiss it. The suggestion disappears as soon as you start typing and comes back when the box is empty again.
 
+Works in English and Chinese: suggestions are written in DSH's interface language and are regenerated when you switch it.
+
 [中文](README.md)
 
 ## Install
@@ -37,9 +39,12 @@ By default the plugin picks a DeepSeek flash model, with thinking off and at mos
 - The model is called once per assistant reply and the result is cached per session, so clearing the input repeatedly costs nothing extra.
 - Suggestions only appear when the assistant has finished and it is your turn; nothing is shown in a new session or while the assistant is working.
 - The model receives the text of the last few turns of the current session, through the same model service you configured in DSH. DSH keeps the API key; the plugin never sees it.
-- Suggestions are written in DSH's interface language and are regenerated when you switch it.
 - The suggestion endpoint is registered on DSH's official `/api` routes and reuses its login check, so unauthenticated requests are rejected.
 - Tab is left alone while an input method is composing, and while the `/` command or `@` reference menu is open.
+
+## Acknowledgements
+
+- [@pranas](https://github.com/pranas): suggestions follow the interface language, Tab prompt fix, and tests ([#2](https://github.com/nzl153/dsh-prompt-suggestions/pull/2))
 
 ## License
 
